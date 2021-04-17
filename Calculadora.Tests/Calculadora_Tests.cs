@@ -12,10 +12,10 @@ namespace Calculadora.Tests
         [DataRow(5, 5, 10)]
         [DataRow(5, 4, 9)]
         [TestMethod]
-        public void Suma_CalculaYRetornaResultado(int a, int b, int Esperado)
+        public void Suma_CalculaYRetornaResultado(float a, float b, float Esperado)
         {
 
-            decimal Obtenido =Cal.Sumar(a, b);
+            float Obtenido =Cal.Sumar(a, b);
 
             Assert.AreEqual(Obtenido, Esperado);
         }
@@ -24,20 +24,20 @@ namespace Calculadora.Tests
         [DataRow(7, 5, 2)]
         [DataRow(5, 4, 1)]
         [TestMethod]
-        public void Resta_CalculaYRetornaResultado(int a, int b, int Esperado)
+        public void Resta_CalculaYRetornaResultado(float a, float b, float Esperado)
         {
-            int Obtenido = Cal.Reste(a, b);
+            float Obtenido = Cal.Reste(a, b);
 
             Assert.AreEqual(Obtenido, Esperado);
         }
 
-        [DataRow(4, 4, 1)]
+        [DataRow( 4, 4, 1)]
         [DataRow(25, 5, 5)]
         [DataRow(20, 4, 5)]
         [TestMethod]
-        public void Divida_CalculaYRetornaResultado(int a, int b, int Esperado)
+        public void Divida_CalculaYRetornaResultado(float a, float b, float Esperado)
         {
-            int Obtenido = Cal.Divida(a, b);
+            float Obtenido = Cal.Divida(a, b);
 
             Assert.AreEqual(Obtenido, Esperado);
         }
@@ -46,9 +46,9 @@ namespace Calculadora.Tests
         [DataRow(7, 5, 35)]
         [DataRow(5, 4, 20)]
         [TestMethod]
-        public void Multiplique_CalculaYRetornaResultado(int a, int b, int Esperado)
+        public void Multiplique_CalculaYRetornaResultado(float a, float b, float Esperado)
         {
-            int Obtenido = Cal.Multiplique(a, b);
+            float Obtenido = Cal.Multiplique(a, b);
 
             Assert.AreEqual(Obtenido, Esperado);
         }

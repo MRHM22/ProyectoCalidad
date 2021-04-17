@@ -4,19 +4,19 @@ namespace Calculadora.Negocio
 {
     public class Metodo
     {
-        public int Sumar(int PrimerValor, int SegundoValor)
+        public float Sumar(float PrimerValor, float SegundoValor)
         {
             return  PrimerValor + SegundoValor;
         }
-        public int Reste(int PrimerValor, int SegundoValor)
+        public float Reste(float PrimerValor, float SegundoValor)
         {
             return PrimerValor - SegundoValor;
         }
-        public int Multiplique(int PrimerValor, int SegundoValor)
+        public float Multiplique(float PrimerValor, float SegundoValor)
         {
             return PrimerValor * SegundoValor;
         }
-        public int Divida(int PrimerValor, int SegundoValor)
+        public float Divida(float PrimerValor, float SegundoValor)
         {
             if(PrimerValor==0 || SegundoValor == 0)
             {
