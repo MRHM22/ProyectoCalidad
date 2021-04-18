@@ -53,7 +53,6 @@ namespace Calculadora.Tests
             float Obtenido = Cal.Multiplique(a, b);
 
             Assert.AreEqual(Obtenido, Esperado);
-
         }
     }
 }
