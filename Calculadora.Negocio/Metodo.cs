@@ -10,7 +10,7 @@ namespace Calculadora.Negocio
         }
         public float Reste(float PrimerValor, float SegundoValor)
         {
-            return PrimerValor - SegundoValor;
+            return PrimerValor - SegundoValor;l
         }
         public float Multiplique(float PrimerValor, float SegundoValor)
         {
