@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Calculadora.Negocio;
 using System;
 
-//esto es un comentario
+//esto es un comentario para jenkins
 
 namespace Calculadora.Tests
 {
