@@ -46,7 +46,7 @@ namespace Calculadora.Tests
 
         [DataRow(4, 4, 16)]
         [DataRow(7, 5, 35)]
-        [DataRow(5, 4, 25)]
+        [DataRow(5, 4, 20)]
         [TestMethod]
         public void Multiplique_CalculaYRetornaResultado(float a, float b, float Esperado)
         {
