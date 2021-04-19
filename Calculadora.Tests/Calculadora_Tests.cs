@@ -33,6 +33,17 @@ namespace Calculadora.Tests
             Assert.AreEqual(Obtenido, Esperado);
         }
 
+        [DataRow(-4, 4, -8)]
+        [DataRow(7, -5, 12)]
+        [DataRow(-5, -4, -1)]
+        [TestMethod]
+        public void ResteNegativos_CalculaYRetornaResultado(float a, float b, float Esperado)
+        {
+            float Obtenido = Cal.Reste(a, b);
+
+            Assert.AreEqual(Obtenido, Esperado);
+        }
+
         [DataRow( 4, 4, 1)]
         [DataRow(25, 5, 5)]
         [DataRow(20, 4, 5)]
