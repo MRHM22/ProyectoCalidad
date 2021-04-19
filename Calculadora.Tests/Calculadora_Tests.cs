@@ -65,5 +65,15 @@ namespace Calculadora.Tests
 
             Assert.AreEqual(Obtenido, Esperado);
         }
+
+        [DataRow(4, 0, 0)]
+        [DataRow(0, -5, 0)]
+        [TestMethod]
+        public void Multiplique_RetorneCero(float a, float b, float Esperado)
+        {
+            float Obtenido = Cal.Multiplique(a, b);
+
+            Assert.AreEqual(Obtenido, Esperado);
+        }
     }
 }
