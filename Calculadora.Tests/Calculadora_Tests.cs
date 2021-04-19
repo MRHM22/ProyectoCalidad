@@ -44,6 +44,17 @@ namespace Calculadora.Tests
             Assert.AreEqual(Obtenido, Esperado);
         }
 
+        [DataRow(0, 4, 0)]
+        [DataRow(0, 0, 0)]
+        [DataRow(20, 0, 0)]
+        [TestMethod]
+        public void Divida_RetorneCero(float a, float b, float Esperado)
+        {
+            float Obtenido = Cal.Divida(a, b);
+
+            Assert.AreEqual(Obtenido, Esperado);
+        }
+
         [DataRow(4, 4, 16)]
         [DataRow(7, 5, 35)]
         [DataRow(5, 4, 20)]
