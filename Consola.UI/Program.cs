@@ -8,20 +8,28 @@ namespace Consola.UI
         static void Main(string[] args)
         {
             Console.WriteLine("------Calculadora-----");
-            Console.WriteLine("Favor ingresar solo numeros enteros.");
-            Console.WriteLine("Ingrese el primer valor: ");
-            int elPrimerValor = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo valor: ");
-            int elSegundoValor = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Seleccione que desea realizar: ");
-            Console.WriteLine("     1 -> Sumar: ");
-            Console.WriteLine("     2 -> Restar: ");
-            Console.WriteLine("     3 -> Multiplicar: ");
-            Console.WriteLine("     4 -> Dividir: ");
-            String Opcion = Console.ReadLine();
-            RealiceElCalculo(elPrimerValor,elSegundoValor,Opcion);
-            Console.WriteLine("Muchas gracias por utilizar nuestra calculadora ");
-            Console.ReadKey();
+            try
+            {
+                Console.WriteLine("Favor ingresar solo numeros enteros.");
+                Console.WriteLine("Ingrese el primer valor: ");
+                int elPrimerValor = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo valor: ");
+                int elSegundoValor = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Seleccione que desea realizar: ");
+                Console.WriteLine("     1 -> Sumar: ");
+                Console.WriteLine("     2 -> Restar: ");
+                Console.WriteLine("     3 -> Multiplicar: ");
+                Console.WriteLine("     4 -> Dividir: ");
+                String Opcion = Console.ReadLine();
+                RealiceElCalculo(elPrimerValor, elSegundoValor, Opcion);
+                Console.WriteLine("Muchas gracias por utilizar nuestra calculadora ");
+                Console.ReadKey();
+            }
+            catch(FormatException ex)
+            {
+                Console.WriteLine("Debe de ingresar numeros y no caracteres. ");
+            }
+            
 
         }
 
