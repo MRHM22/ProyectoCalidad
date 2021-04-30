@@ -10,7 +10,7 @@ namespace Calculadora.Tests
     public class Calculadora_Tests
     {
         Negocio.Metodo Cal = new Metodo();
-        [DataRow(4, 4, -8)]
+        [DataRow(4, 4, 8)]
         [DataRow(5, 5, 10)]
         [DataRow(5, 4, 9)]
         [TestMethod]
