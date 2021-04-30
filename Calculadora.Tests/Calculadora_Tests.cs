@@ -22,7 +22,7 @@ namespace Calculadora.Tests
             Assert.AreEqual(Obtenido, Esperado);
         }
 
-        [DataRow(-4, -4, -8)]
+        [DataRow(-4, -4, 8)]
         [DataRow(5, -5, 0)]
         [TestMethod]
         public void SumaNegativos_CalculaYRetornaResultado(float a, float b, float Esperado)
